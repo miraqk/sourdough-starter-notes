@@ -1,0 +1,25 @@
+{
+  "name": "sourdough-starter-notes",
+  "version": "200910",
+  "description": "A small page for notes on the sourdough starter",
+  "repository": "git@github.com:miraqk/sourdough-starter-notes",
+  "license": "MIT",
+  "author": "Mira Kim <mira.q.kim@gmail.com>",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "build": "gridsome build",
+    "clean": "rm -rf dist && mkdir dist",
+    "start": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.6.2",
+    "gridsome": "^0.7.0",
+    "nib": "^1.1.2",
+    "sanitize.css": "^12.0.1",
+    "stylus": "^0.54.8",
+    "stylus-loader": "^3.0.2"
+  }
+}

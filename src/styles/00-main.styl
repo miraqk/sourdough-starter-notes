@@ -1,0 +1,34 @@
+@require "_defaults"
+
+body
+  background beige pattern
+  font-family font_primary
+  font-size font_medium
+
+h1
+  font font_large font_display
+  margin 0
+
+h2
+  font calc(var(--m2)) font_display
+
+p
+  margin calc(var(--s0)) 0
+
+ul
+  list-style-type none
+
+  li
+    margin-bottom calc(var(--m2))
+    
+  ol li
+    margin calc(var(--s0)) 0
+
+.header
+  font font_extralarge font_display
+  margin-top calc(var(--m1))
+  text-align center
+
+.layout
+  margin 0 auto
+  max-width calc(80 * var(--vw))
