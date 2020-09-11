@@ -1,7 +1,7 @@
 <template>
   <Layout>
-  	<h2 v-html="$page.note.title" />
-  	<div v-html="$page.note.content" />
+    <h2 v-html="$page.note.title" />
+    <div v-html="$page.note.content" />
   </Layout>
 </template>
 
@@ -19,9 +19,9 @@ query Note ($id: ID!) {
 <script>
 export default {
   metaInfo() {
-  	return {
-  	  title: this.$page.note.title
-  	}
+    return {
+      title: this.$page.note.title
+    }
   }
 }
 </script>

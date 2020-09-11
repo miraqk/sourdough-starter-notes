@@ -9,20 +9,28 @@ module.exports = {
   siteDescription: 'A small page for notes on the sourdough starter',
   titleTemplate: 'Notes on the Starter',
   plugins: [
-  	{
-  	  use: '@gridsome/source-filesystem',
-  	  options: {
-  	    baseDir: './src/content/notes',
-  	    path: '*.md',
-  	    pathPrefix: '/note',
-  	    typeName: 'Note'
-  	  }
-  	}
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        baseDir: './src/content/notes',
+        path: '*.md',
+        pathPrefix: '/note',
+        typeName: 'Note'
+      }
+    }
   ],
   transformers: {
-  	remark: {
+    remark: {
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
       externalLinksTarget: '_blank'
+    }
+  },
+  css: {
+    loaderOptions: {
+      stylus: {
+        use: [require('nib')(), require('rupture')()],
+        import: ['~nib/lib/nib/index.styl']
+      }
     }
   }
 }

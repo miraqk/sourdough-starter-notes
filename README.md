@@ -33,11 +33,14 @@ This project uses Gridsome as the static site generator, and uses Stylus as the 
 
 ## TODO
 
-- [ ] Complete desktop styling
-- [ ] Mobile styling
+- [ ] Complete styling
 
 ## Changelog
 
+### 200911
+
+- [x] Mobile styling
+
 ### 200910
 
-- [x] Initial build.
+- [x] Initial build
