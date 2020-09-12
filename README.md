@@ -33,9 +33,13 @@ This project uses Gridsome as the static site generator, and uses Stylus as the 
 
 ## TODO
 
-- [ ] Complete styling
+- [ ] Improve styling
 
 ## Changelog
+
+### 200912
+
+- [x] Added Footer
 
 ### 200911
 

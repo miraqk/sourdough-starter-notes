@@ -1,19 +1,18 @@
 <template>
   <div class="layout">
-    <header class="header">
-      {{ $static.metadata.siteName }}
-    </header>
+    <Header />
     <slot/>
-    <footer class="footer">
-    </footer>
+    <Footer />
   </div>
 </template>
 
-<static-query>
-query {
-  metadata {
-    siteName
-    siteDescription
+<script>
+import Header from "./partials/Header";
+import Footer from "./partials/Footer";
+export default {
+  components: {
+    Header,
+    Footer
   }
 }
-</static-query>
+</script>
