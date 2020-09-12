@@ -5,7 +5,7 @@
   "repository": "git@github.com:miraqk/sourdough-starter-notes",
   "license": "MIT",
   "author": "Mira Kim <mira.q.kim@gmail.com>",
-  "private": true,
+  "private": false,
   "main": "main.js",
   "scripts": {
     "build": "gridsome build",
